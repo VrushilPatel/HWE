@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository
-                git url: 'https://github.com/yourusername/your-php-project.git', branch: 'main'
+                git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
             }
         }
 
