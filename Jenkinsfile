@@ -13,6 +13,7 @@ pipeline {
             steps {
                 // Perform build steps here
                 // For PHP, you might run commands like composer install or any other necessary build steps
+                git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
                 
             }
         }
@@ -20,6 +21,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run PHPUnit tests for test123.php
+                git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
                 
             }
         }
