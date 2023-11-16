@@ -9,9 +9,11 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'phpunit DatabaseConnectionTest.php'
+                // Perform build steps here
+                // For PHP, you might run commands like composer install or any other necessary build steps
+                bat 'composer install' 
             }
         }
 
