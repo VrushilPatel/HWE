@@ -12,7 +12,7 @@ pipeline {
         stage('Build and Test') {
             steps {
                 // Assuming PHP unit tests or any other test runner is available
-                sh 'phpunit' // Replace with your PHP test command
+                sh 'phpunit --configuration phpunit.xml --testdox DatabaseConnectionTest.php'
             }
         }
     }
