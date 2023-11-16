@@ -18,7 +18,7 @@ pipeline {
         
         stage('Test') {
             steps {
-                sh 'phpunit --configuration phpunit.xml --testdox DatabaseConnectionTest.php'
+                sh 'phpunit --configuration DatabaseConnectionTest.php'
             }
         }
     }
