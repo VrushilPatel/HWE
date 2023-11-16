@@ -11,9 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'composer install'
-                sh 'composer require --dev phpunit/phpunit:^10'
-                
+                sh 'composer install'                
                 }
         }
 
