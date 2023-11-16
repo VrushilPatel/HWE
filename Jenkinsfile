@@ -20,11 +20,9 @@ pipeline {
         stage('Test') {
             steps {
                 // Run PHPUnit tests for test123.php
-                bat 'phpunit test123.php'
+                bat 'phpunit DatabaseConnectionTest.php'
             }
         }
-
-
 
 
     }
