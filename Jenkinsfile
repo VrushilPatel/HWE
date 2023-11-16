@@ -9,12 +9,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                sh 'composer install'                
-                }
-        }
-
         
         stage('Test') {
             steps {
