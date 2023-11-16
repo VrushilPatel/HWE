@@ -9,6 +9,14 @@ pipeline {
             }
         }
 
+        stage('Build') {
+            steps {
+                sh 'composer install'                
+                }
+        }
+
+
+
 
     }
 }
