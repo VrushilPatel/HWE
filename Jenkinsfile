@@ -9,10 +9,10 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Test') {
             steps {
-                sh 'composer install'                
-                }
+                sh 'phpunit DatabaseConnectionTest.php'
+            }
         }
 
 
