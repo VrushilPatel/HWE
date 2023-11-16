@@ -8,7 +8,11 @@ pipeline {
                 git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
             }
         }
-
+        stage('Build') {
+            steps {
+                sh 'composer install'                
+                }
+        }
         
         stage('Test') {
             steps {
