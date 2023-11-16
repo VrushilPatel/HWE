@@ -9,9 +9,17 @@ pipeline {
             }
         }
 
-        stage('Build and Test') {
+        stage('Build') {
             steps {
-                // Assuming PHP unit tests or any other test runner is available
+                sh 'composer install'
+                sh 'composer require --dev phpunit/phpunit:^10'
+                
+                }
+        }
+
+        
+        stage('Test') {
+            steps {
                 sh 'phpunit --configuration phpunit.xml --testdox DatabaseConnectionTest.php'
             }
         }
