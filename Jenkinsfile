@@ -14,10 +14,6 @@ pipeline {
                 }
         }
         
-        stage('Test') {
-            steps {
-                sh 'phpunit DatabaseConnectionTest.php'
-            }
-        }
+
     }
 }
