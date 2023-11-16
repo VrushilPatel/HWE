@@ -11,14 +11,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
+                echo "Building the application...\n";
                 
             }
         }
 
         stage('Test') {
             steps {
-                git url: 'https://github.com/VrushilPatel/HWE.git', branch: 'main'
+                echo "Running tests...\n";
                 
             }
         }
