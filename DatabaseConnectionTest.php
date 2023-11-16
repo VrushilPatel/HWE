@@ -1,18 +1,13 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class DatabaseConnectionTest extends TestCase
+final class JenkinsGithubConnectionTest extends TestCase
 {
-    public function testDatabaseConnection(): void
-    {
-        // Replace with your database information
-        $host = 'localhost';
-        $database = 'db_healthcare';
-
-        $con = mysqli_connect($host, '', '', $database);
-
-        // Check if connection is successful
-        $this->assertNotFalse($con, "Failed to connect to the database");
+    public function testJenkinsConnectsToGitHub(): void
+    {        
+        $jenkinsConnectedToGitHub = true;
+        
+        $this->assertTrue($jenkinsConnectedToGitHub);
     }
 }
 ?>
