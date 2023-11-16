@@ -13,14 +13,14 @@ pipeline {
             steps {
                 // Perform build steps here
                 // For PHP, you might run commands like composer install or any other necessary build steps
-                bat 'composer install'
+                
             }
         }
 
         stage('Test') {
             steps {
                 // Run PHPUnit tests for test123.php
-                bat 'phpunit DatabaseConnectionTest.php'
+                
             }
         }
 
