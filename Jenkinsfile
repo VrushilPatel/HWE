@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Perform build steps here
                 // For PHP, you might run commands like composer install or any other necessary build steps
-                bat 'composer install' 
+                bat 'C:/ProgramData/Jenkins/.jenkins/workspace/HWE Pipeline/composer install'
             }
         }
 
