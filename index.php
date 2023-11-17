@@ -81,7 +81,7 @@ alert('User already registered. Please try again');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Clinic Appointment Application</title>
+        <title>Healthcare Waiting Elimination</title>
         <!-- Bootstrap -->
         <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -108,7 +108,11 @@ alert('User already registered. Please try again');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img alt="Brand" src="assets/img/logo.png" height="40px"></a>
+                   
+                </div>
+
+                <div>
+                    <p class="pull-left"><a href="adminlogin.php">admin</a></p>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -172,7 +176,6 @@ alert('User already registered. Please try again');
                                 <div class="col-md-6">
                                     
                                     <form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8" class="form" role="form">
-                                        <h4>It's free and always will be.</h4>
                                         <div class="row">
                                             <div class="col-xs-6 col-md-6">
                                                 <input type="text" name="patientFirstName" value="" class="form-control input-lg" placeholder="First Name" required />
@@ -293,7 +296,6 @@ alert('User already registered. Please try again');
                                             <input type="radio" name="patientGender" value="female" required/>Female
                                         </label>
                                         <br />
-                                        <span class="help-block">By clicking Create my account, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
                                         
                                         <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit" name="signup" id="signup">Create my account</button>
                                     </form>
@@ -309,12 +311,12 @@ alert('User already registered. Please try again');
         <!-- modal container end -->
 
         <!-- 1st section start -->
-        <section id="promo-1" class="content-block promo-1 min-height-600px bg-offwhite">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <h2>Make appointment today!</h2>
-                        <p>This is Doctor's Schedule. Please <span class="label label-danger">login</span> to make an appointment. </p>
+                        <h4>Book an Appointment</h4>
+                        <p>Please login to make an appointment. </p>
                             
                         <!-- date textbox -->
                        
@@ -384,81 +386,10 @@ alert('User already registered. Please try again');
         
         <!-- third section end -->
         <!-- forth sections start -->
-        <section id="content-1-9" class="content-1-9 content-block">
-            <div class="container">
-                <div class="underlined-title">
-                    <h1>Get in Touch</h1>
-                    <hr>
-                    <h2>Feel free to drop us a line to contact us</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-pencil"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>Branding</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-code"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>Web Design</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-comments-o"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>Social Marketing</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-search"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>SEO</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-mobile"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>Mobile Apps</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 pad25">
-                        <div class="col-xs-2">
-                            <span class="fa fa-bookmark"></span>
-                        </div>
-                        <div class="col-xs-10">
-                            <h4>Corporate Literture</h4>
-                            <p>Retro chillwave YOLO four loko photo booth. Brooklyn kale chips, seitan hella 3 wolf moon slow-carb paleo.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
+        
         <!-- forth section end -->
         <!-- footer start -->
-        <div class="copyright-bar bg-black">
-            <div class="container">
-                <p class="pull-left small">© Projectworlds <a href ="https://projectworlds.in/">Get More Projects </a></p>
-                <p class="pull-right small"><a href="adminlogin.php">admin</a></p>
-            </div>
-        </div>
+        
         <!-- footer end -->
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
