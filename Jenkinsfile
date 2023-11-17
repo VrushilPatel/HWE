@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building the application...";
-                bat "composer require --dev phpuint/phpuint ^10"
+                bat "C:\ProgramData\ComposerSetup\bincomposer require --dev phpuint/phpuint ^10"
                 
             }
         }
