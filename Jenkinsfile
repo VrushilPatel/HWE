@@ -13,6 +13,7 @@ pipeline {
             steps {
                 echo "Building the application...";
                 //bat "C:\\ProgramData\\ComposerSetup\\bin\\composer require --dev phpunit/phpunit ^10"
+                bat "C:\\ProgramData\\ComposerSetup\\bin\\composer remove phpunit/phpunit"
                 bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer require --dev phpunit/phpunit ^8"
                 
             }
