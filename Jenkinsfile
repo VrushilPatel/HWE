@@ -14,7 +14,7 @@ pipeline {
                 echo "Building the application...";
                 //bat "C:\\ProgramData\\ComposerSetup\\bin\\composer require --dev phpunit/phpunit ^10"
                 bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat remove phpunit/phpunit"
-                bat "C:\\xampp\\php\\php.exe C:\xampp\php\phpunit.bat C:\\ProgramData\\ComposerSetup\\bin\\composer.bat require --dev phpunit/phpunit ^9"
+                bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat require --dev phpunit/phpunit ^9"
                 
             }
         }
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "Running tests...";
                 //bat "phpunit DatabaseConnectionTest.php"
-                bat "C:\xampp\php\phpunit.bat C:\\xampp\\php\\phpunit DatabaseConnectionTest.php"
+                bat "C:\\xampp\\php\\phpunit DatabaseConnectionTest.php"
 
                 
             }
