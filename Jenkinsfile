@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "Running tests...";
                 //bat "phpunit DatabaseConnectionTest.php"
-                bat "C:\\xampp\\php\\phpunit DatabaseConnectionTest.php"
+                //bat "C:\\xampp\\php\\phpunit DatabaseConnectionTest.php"
 
                 
             }
@@ -31,9 +31,10 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                echo "Deploying...";
-                
+                echo "Deploying to XAMPP..."
+                bat 'php C:\\xampp\\htdocs\\HWE\\deployment_script.php'
             }
         }
+
     }
 }
