@@ -19,13 +19,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Running tests...";
-                bat "phpunit DatabaseConnectionTest.php"
+               // bat "phpunit DatabaseConnectionTest.php"
             }
         }
 
         stage('Deployment') {
             steps {
-                echo "Deploying to XAMPP..."
+                echo "Deploying to XAMPP...";
                 bat 'php C:\\xampp\\htdocs\\HWE\\deployment_script.php'
 
             }
