@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Running tests...";
-                bat ""
+                bat "phpunit DatabaseConnectionTest.php"
             }
         }
 
