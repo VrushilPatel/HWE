@@ -26,7 +26,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo "Deploying to XAMPP...";
-                bat 'php C:\\xampp\\htdocs\\HWE\\deployment_script.php'
+                bat 'php deployment_script.php'
 
             }
         }
