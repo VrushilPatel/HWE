@@ -12,13 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building the application...";
-                bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat require --dev phpunit/phpunit ^9"
+                bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat C:\\xampp\\php\\phpunit.bat"
             }
         }
 
         stage('Test') {
             steps {
                 echo "Running tests...";
+                bat ""
             }
         }
 
