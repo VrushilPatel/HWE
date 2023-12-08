@@ -22,6 +22,7 @@ pipeline {
             steps {
                 echo "Running tests...";
                 //bat "C:\\xampp\\php\\phpunit DatabaseConnectionTest.php"
+                bat 'xcopy /S /Y "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\HWE" "C:\\xampp\\htdocs\\HWE"'
             }
         }
 
