@@ -21,7 +21,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Running tests...";
-                //bat "phpunit DatabaseConnectionTest.php"
+                bat "C:\\xampp\\php\\phpunit.bat phpunit DatabaseConnectionTest.php"
             }
         }
 
