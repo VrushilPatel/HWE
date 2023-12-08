@@ -15,7 +15,6 @@ pipeline {
                 //bat "C:\\ProgramData\\ComposerSetup\\bin\\composer.bat --dev phpunit/phpunit ^9"
                 bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat C:\\xampp\\php\\phpunit.bat remove phpunit/phpunit"
                 bat "C:\\xampp\\php\\php.exe C:\\ProgramData\\ComposerSetup\\bin\\composer.bat C:\\xampp\\php\\phpunit.bat --dev phpunit/phpunit ^9"
-                bat "npm install"
             }
         }
 
