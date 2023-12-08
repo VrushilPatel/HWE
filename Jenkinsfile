@@ -28,8 +28,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 echo "Deploying to XAMPP...";
-                bat 'C:\\xampp\\php\\php'
-                bat 'deployment_script.php'
+                bat 'C:\\xampp\\php\\php deployment_script.php'
 
             }
         }
